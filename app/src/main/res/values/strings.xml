@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Simple To Do List Android</string>
-    <string name="action_settings">Settings</string>
+    <string name="text_delete">Delete</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="detail_fragment_label">List Detail</string>
+    <string name="creation_fragment_label">Insert List</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
@@ -43,4 +43,16 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_fab_fragment_main">Insert New List</string>
+    <string name="text_title">Title</string>
+    <string name="text_description">Description</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_dp_default">1 Jan 2001</string>
+    <string name="text_tv_dp">Date :</string>
+    <string name="date_invalid">Invalid Date, Least Date is the Current Date</string>
+    <string name="et_title_empty">Title Can Not Be Empty!</string>
+    <string name="create_success">Successfully Created Note</string>
 </resources>

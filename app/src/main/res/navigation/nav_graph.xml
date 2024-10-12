@@ -3,26 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/MainFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="sp.jmet.simpletodolistandroid.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/MainFragment"
+        android:name="sp.jmet.simpletodolistandroid.view.fragment.MainFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_main">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_MainFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_CreationFragment"
+            app:destination="@id/CreationFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="sp.jmet.simpletodolistandroid.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/DetailFragment"
+        android:name="sp.jmet.simpletodolistandroid.view.fragment.DetailFragment"
+        android:label="@string/detail_fragment_label"
+        tools:layout="@layout/fragment_detail">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_DetailFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CreationFragment"
+        android:name="sp.jmet.simpletodolistandroid.view.fragment.CreationFragment"
+        android:label="@string/creation_fragment_label"
+        tools:layout="@layout/fragment_creation">
+
+        <action
+            android:id="@+id/action_CreationFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+
     </fragment>
 </navigation>
